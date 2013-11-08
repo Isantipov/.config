@@ -1,0 +1,32 @@
+[alias]
+        tg = !TortoiseGitProc.exe /command:$1
+        tl = !TortoiseGitProc.exe /command:log
+        tc = !TortoiseGitProc.exe /command:commit
+        ts = !TortoiseGitProc.exe /command:repostatus		
+        co = checkout
+        cm = commit
+        st = status    
+		tfpull = tf pull --rebase --deep
+		tffetch = tf fetch --deep
+    br = branch    
+    df = diff
+    lg = log -p
+        gr = log --graph --all --format=format:'%C(bold yellow)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+        graph-iso = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ai)%C(reset) %C(white)%s%C(reset) %C(bold white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit
+[credential]
+[user]
+        name = Ivan Antsipau
+        email = ivan.antsipau@gmail.com
+[push]
+        default = simple
+[color]
+        ui = true
+[color "status"]
+        added = green bold
+        changed = red bold
+        untracked = red bold
+[color "diff"]
+        old = red bold
+        new = green bold
+[core]	
+	ignorecase = true
